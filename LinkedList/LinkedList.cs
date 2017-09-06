@@ -15,7 +15,7 @@ namespace LinkedList
         public int Count { get; private set; } = 0;
 
 
-        public void AddToTail(T item)
+        public void AddLast(T item)
         {
             Node<T> node = new Node<T>(item);
 
@@ -33,7 +33,7 @@ namespace LinkedList
 
         }
 
-        public void AddToHead(T item)
+        public void AddFirst(T item)
         {
             Node<T> first = new Node<T>(item);
             first.Next = Head;

@@ -12,17 +12,17 @@ namespace LinkedList
         {
             LinkedList<int> list =new LinkedList<int>();
 
-            list.AddToTail(5);
-            list.AddToTail(15);
-            list.AddToTail(30);
-            list.AddToHead(2);
-            list.AddToTail(3);
-            list.AddToHead(17);
-            list.AddToHead(2);
+            list.AddLast(5);
+            list.AddLast(15);
+            list.AddLast(30);
+            list.AddFirst(2);
+            list.AddLast(3);
+            list.AddFirst(17);
+            list.AddFirst(2);
 
             Console.WriteLine(list.Remove(2));
 
-            Console.WriteLine("Количество элементов - {0}",list.Count);
+            Console.WriteLine("Count - {0}",list.Count);
 
             foreach (var item in list)
             {
